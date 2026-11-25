@@ -14,12 +14,20 @@ header h1{margin:0;font-size:2.2rem;letter-spacing:1px}
 header h1 span{color:var(--accent)}
 header p{margin:.4rem 0 0;color:#CFE3E6}
 main{max-width:720px;margin:0 auto;padding:0 16px 48px}
-.links{display:grid;gap:12px;margin-bottom:24px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px}
 .links a{display:block;text-align:center;padding:14px;border-radius:12px;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none}
 section{background:var(--card);border-radius:16px;padding:24px;margin-bottom:16px}
 h2{margin-top:0;font-size:1.3rem}
 h3{font-size:1.05rem;margin-bottom:.3rem}
 .note{color:var(--muted);font-size:.9rem}
+#funde h2{margin-top:0}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.item{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid #e3eaeb;flex-wrap:wrap}
+.nr{flex:none;width:38px;height:38px;border-radius:50%;background:var(--bg);color:var(--accent);font-weight:800;display:flex;align-items:center;justify-content:center}
+.info{flex:1 1 220px;min-width:0;display:grid}
+.cat{font-size:.75rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+.meta{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.go{flex:none;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none;padding:9px 14px;border-radius:10px;font-size:.9rem}
 footer{text-align:center;color:#CFE3E6;font-size:.85rem}
 </style>
 </head>
@@ -30,11 +38,39 @@ footer{text-align:center;color:#CFE3E6;font-size:.85rem}
 </header>
 <main>
   <nav class="links">
+    <a href="#funde">Funde der Woche</a>
     <a href="https://www.pinterest.de/topkauf20/">Pinterest</a>
+    <a href="https://www.instagram.com/topkauf20official/">Instagram</a>
     <a href="#impressum">Impressum</a>
     <a href="#datenschutz">Datenschutz</a>
   </nav>
 
+  <section id="funde">
+    <h2>Funde der Woche · KW 49</h2>
+    <p class="note">Anzeige · Alle Links sind Werbelinks. Die Nummer entspricht der Nummer im Beitrag. Preise siehst du aktuell bei Amazon.</p>
+    <ol class="items">
+    <li class="item"><span class="nr">1</span><div class="info"><span class="cat">Technik</span><strong>Anker Nano USB-C Ladegerät 20 W</strong><span class="meta">★ 4,7 · 5.400 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B099KD22T1?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">2</span><div class="info"><span class="cat">Technik</span><strong>TP-Link Tapo P100 WLAN-Steckdose</strong><span class="meta">★ 4,6 · 42.820 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B07Z5JD3T4?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">3</span><div class="info"><span class="cat">Haushalt</span><strong>Vileda Turbo Wischmop-Set mit Pedaleimer</strong><span class="meta">★ 4,4 · 496 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0GPYDFGZY?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">4</span><div class="info"><span class="cat">Haushalt</span><strong>Kärcher WV 2 Plus Akku-Fenstersauger</strong><span class="meta">★ 4,5 · 37.389 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B075F78KDV?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">5</span><div class="info"><span class="cat">Küche</span><strong>COSORI Heißluftfritteuse 5,5 l</strong><span class="meta">★ 4,6 · 68.271 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B07N8N6C85?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">6</span><div class="info"><span class="cat">Küche</span><strong>BRITA Wasserfilter-Kanne Marella</strong><span class="meta">★ 4,6 · 2.675 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0BSXGFJKM?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">7</span><div class="info"><span class="cat">Werkzeuge</span><strong>Bosch IXO Akkuschrauber</strong><span class="meta">★ 4,7 · 9.123 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0BQYW8LZ4?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">8</span><div class="info"><span class="cat">Werkzeuge</span><strong>Wera Tool-Check PLUS Bit- und Ratschenset</strong><span class="meta">★ 4,9 · 398 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0DYP6Z6G1?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">9</span><div class="info"><span class="cat">Autozubehör</span><strong>Xiaomi Mi Portable Electric Air Compressor 1S</strong><span class="meta">★ 4,6 · 9.913 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0CBBP8BQX?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">10</span><div class="info"><span class="cat">Autozubehör</span><strong>NOCO Boost Plus GB40 Starthilfegerät</strong><span class="meta">★ 4,5 · 128.189 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B015TKUPIC?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">11</span><div class="info"><span class="cat">Fitness</span><strong>BLACKROLL Standard Faszienrolle</strong><span class="meta">★ 4,7 · 15.491 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B003BP5AGA?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">12</span><div class="info"><span class="cat">Garten</span><strong>Gardena Comfort FlexSchlauch 13 mm (1/2&quot;)</strong><span class="meta">★ 4,6 · 1.417 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B00HPXV7YI?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">13</span><div class="info"><span class="cat">Garten</span><strong>Kärcher K 4 Power Control Hochdruckreiniger</strong><span class="meta">★ 4,4 · 3.440 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B08R43WTR5?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">14</span><div class="info"><span class="cat">Wohnen</span><strong>Philips Hue White &amp; Color Ambiance Starter-Set E27</strong><span class="meta">★ 4,6 · 109 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0FJYBSW14?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">15</span><div class="info"><span class="cat">Wohnen</span><strong>Govee LED Strip (WLAN, App-Steuerung)</strong><span class="meta">★ 4,6 · 4.820 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B09BN2PSR8?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">16</span><div class="info"><span class="cat">Beauty</span><strong>Philips OneBlade Trimmer &amp; Rasierer</strong><span class="meta">★ 4,3 · 13.835 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0DXLBZF4Q?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">17</span><div class="info"><span class="cat">Beauty</span><strong>Oral-B Pro Series 1 Elektrische Zahnbürste</strong><span class="meta">★ 4,4 · 2.690 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B097JWGZ67?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">18</span><div class="info"><span class="cat">Freizeit</span><strong>Stanley Classic Legendary Thermosflasche 1 l</strong><span class="meta">★ 4,7 · 41.153 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0FQVHHNX7?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">19</span><div class="info"><span class="cat">Familie</span><strong>tonies Toniebox Starter-Set</strong><span class="meta">★ 4,6 · 462 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0FLDYWZH8?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    <li class="item"><span class="nr">20</span><div class="info"><span class="cat">Küche</span><strong>Fiskars Hard Edge Universal-Messerschärfer</strong><span class="meta">★ 4,3 · 2.026 Bewertungen · Stand 25.11.2026</span></div><a class="go" href="https://www.amazon.de/dp/B0075D8K3O?tag=topkauf20-21" target="_blank" rel="sponsored noopener">Bei Amazon ansehen</a></li>
+    </ol>
+  </section>
   <section>
     <h2>Werbehinweis</h2>
     <p>Die Beiträge von TopKauf20 enthalten Affiliate-Links und sind als „Anzeige“, „Werbelink“ oder „Affiliate-Link“ gekennzeichnet. Kaufst du über einen solchen Link, erhalte ich eine Provision. Für dich ändert sich der Preis dadurch nicht.</p>
